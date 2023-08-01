@@ -1,0 +1,55 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 15px;
+
+    background-color: white;
+    max-width: 720px;
+    border-radius: 8px;
+    box-shadow: whitesmoke 3px 3px;
+}
+
+.titleInput {
+    width: 95%;
+    margin: auto;
+    border: none;
+    text-align: center;
+    font-size: 24px;
+}
+
+.titleInput:focus {
+    outline: none; 
+}
+
+.descInput {
+    width: 95%;
+    margin: auto;
+    border: none;
+    border-top: solid whitesmoke;
+}
+
+.descInput:focus {
+    outline: none; 
+}
+
+button {
+    background-color: white;
+    border: none;
+}
+
+textarea {
+    max-width: 95%;
+    min-width: 95%;
+    min-height: 60px;
+}
+
+form button {
+    font-size: 26px;
+    width: fit-content;
+    margin: auto;
+}
+
+form button :hover {
+    color: green;
+}

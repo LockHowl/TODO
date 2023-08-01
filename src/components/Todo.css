@@ -1,0 +1,83 @@
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes disappear {
+    0% {opacity: 100%;}
+    50% {opacity: 50%;}
+    100% {opacity: 0%;}
+}
+
+.shake-disappear {
+  animation: shake 0.5s linear infinite, disappear 2s forwards;
+}
+
+.todo {
+    transition: height 0.5s;
+
+    color: black;
+    background-color: white;
+    box-shadow: whitesmoke 3px 3px;
+
+    position: relative;
+    margin: 7.5px auto;
+    padding: 15px;
+
+    border-radius: 8px;
+
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    max-width: 720px;
+}
+
+.todo-container {
+    width: 95%;
+    margin: auto;
+}
+
+.todo-text {
+    width: 100%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.title {
+    font-size: 24px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #333;
+}
+
+.description {
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #666;
+}
+
+.bar {
+    border-top: solid whitesmoke;
+}
+
+.cross {
+    position: absolute;
+    right: 0;
+    margin-top: auto;
+    margin-right: 10px;
+}
+
+.cross:hover {
+    color: red;
+}
